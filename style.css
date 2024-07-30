@@ -5,6 +5,10 @@
 :root {
     /* Colour palette */
     --background-color: #ffffff;
+    --border-color: #ccc;
+    --border-radius: 4px;
+    --padding: 10px;
+    --font-size: 16px;  
 
     /* Constants */
 }
@@ -28,27 +32,42 @@ body {
     text-align: center;
 }
 .mainframe {
-    background-color: aquamarine;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
-.input {
-    background-color: yellowgreen;
+.input,
+.output {
     flex-basis: 45%;
 }
 .input textarea {
+    font-family: 'Computer Modern Serif', 'DejaVu Math TeX Gyre', monospace, Times;
     width: 100%;
-}
-.output {
-    background-color: brown;
-    flex-basis: 45%;
+    height: 300px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    font-size: var(--font-size);
+    box-sizing: border-box;
+    background-color: #f9f9f9;
 }
 .output .box {
-    background-color: blueviolet;
+    font-family: 'Computer Modern Serif', 'DejaVu Math TeX Gyre', monospace, Times;
     width: 100%;
-    height:100%;
+    height: 300px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    font-size: var(--font-size);
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    overflow-y: auto;
 }
 /*  Media queries
     ==========================================================================
 */
+@media screen and (max-width: 768px) {
+    .mainframe {
+        flex-flow: column wrap;
+    }
+}
