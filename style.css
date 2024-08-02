@@ -50,6 +50,7 @@ body {
     font-size: var(--font-size);
     box-sizing: border-box;
     background-color: #f9f9f9;
+    resize: vertical;
 }
 .output .box {
     font-family: 'Computer Modern Serif', 'DejaVu Math TeX Gyre', monospace, Times;
