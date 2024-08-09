@@ -64,6 +64,21 @@ body {
     background-color: #f9f9f9;
     overflow-y: auto;
 }
+.footer-links {
+    background-color: violet;
+    text-align: center;
+}
+.footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footer-links li {
+    display: inline;
+}
+.footer-links li a {
+    text-decoration: none;
+}
 /*  Media queries
     ==========================================================================
 */
