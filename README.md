@@ -17,6 +17,6 @@ Fermat says: \(\forall n > 2, n \in \mathbb{Z} \quad \) and \(\quad \forall a,b,
 </p>
 
 ## To-do
-- [] Only allow secure HTML tags;
-- [] Fix horizontal overflow from output box;
-- [] #footer-credits writing animation;
+- [ ] Only allow secure HTML tags;
+- [ ] Fix horizontal overflow from output box;
+- [ ] #footer-credits writing animation;
