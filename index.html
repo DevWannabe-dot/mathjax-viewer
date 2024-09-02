@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel=icon href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css"> <!-- Fonts -->
-    <script id="MathJax-script" async
+    <script type="text/javascript" id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-        </script>
+    </script>
+    <!-- This is where the magic happens -->
+    <script type="text/javascript" id="inputToMath-script"
+            src="inputToMath.js">
+    </script>
 </head>
 <body>
     <div class="container">
@@ -18,7 +22,7 @@
                 <h1>MathJax Viewer</h1>
             </div>
             <div>
-                Not a \( \LaTeX \) environment. Use <a href="https://docs.mathjax.org/en/latest/basic/mathematics.html" target="_blank">MathJax syntax</a> and plain text only.
+                Not a \( \LaTeX \) environment. Use <a href="https://docs.mathjax.org/en/latest/basic/mathematics.html" target="_blank">MathJax \\(syntax\)</a> and plain text only.
             </div><br>
         </header>
         <main>
@@ -50,6 +54,7 @@
                             </svg>
                         </a>
                     </li>
+                    <br><span id="footer-credits">Brought to you by Pedro H. Oɫiveira<blink>_</blink></span><br>
                 </ul>
             </div>
         </footer>

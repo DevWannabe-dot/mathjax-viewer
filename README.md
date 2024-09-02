@@ -5,3 +5,18 @@ It's no secret that the process of writing LaTeX notes is insufferable -- the en
 This way, the user input is going to be only math, allowing for copy-pasting into a proper LaTeX math environment once the equation is finished.
 
 ## Usage
+#### Input
+```
+Fermat says: \(\forall n > 2, n \in \mathbb{Z} \quad \) and \(\quad \forall a,b,c \in \mathbb{Z}^+\)
+<br><br> <!-- HTML and math?! -->
+<center>\(a^n + b^n = c^n\) cannot be solved.</center>
+```
+#### Output
+<p  align="center">
+<img src=".media/example.png">
+</p>
+
+## To-do
+- [] Only allow secure HTML tags;
+- [] Fix horizontal overflow from output box;
+- [] #footer-credits writing animation;

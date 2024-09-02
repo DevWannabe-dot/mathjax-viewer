@@ -4,21 +4,31 @@
 */
 :root {
     /* Colour palette */
-    --background-color: #ffffff;
+    --background-color: #232527;
+    --box-color: #0a0b0c;
     --border-color: #ccc;
     --border-radius: 4px;
     --padding: 10px;
-    --font-size: 16px;  
+    --font-size: 16px;
+    --text-color: white;
 
     /* Constants */
+}
+/*  ==========================================================================
+    General styles
+    ==========================================================================
+*/
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+a {
+    text-decoration: none;
 }
 /*  ==========================================================================
     Sitewide styles
     ==========================================================================
 */
-body {
-    background-color: var(--background-color);
-}
 .container {
     max-width: 1280px;
     margin: auto;
@@ -27,9 +37,6 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-}
-.page-title h1 {
-    text-align: center;
 }
 .mainframe {
     display: flex;
@@ -40,8 +47,9 @@ body {
 .output {
     flex-basis: 45%;
 }
-.input textarea {
-    font-family: 'Computer Modern Serif', 'DejaVu Math TeX Gyre', monospace, Times;
+.input textarea,
+.output .box {
+    font-family: monospace, Times;
     width: 100%;
     height: 300px;
     border: 1px solid var(--border-color);
@@ -49,19 +57,14 @@ body {
     padding: var(--padding);
     font-size: var(--font-size);
     box-sizing: border-box;
-    background-color: #f9f9f9;
+    background-color: var(--box-color);
+    color: var(--text-color);
+}
+.input textarea {
     resize: vertical;
 }
 .output .box {
     font-family: 'Computer Modern Serif', 'DejaVu Math TeX Gyre', monospace, Times;
-    width: 100%;
-    height: 300px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    padding: var(--padding);
-    font-size: var(--font-size);
-    box-sizing: border-box;
-    background-color: #f9f9f9;
     overflow-y: auto;
 }
 .footer-links {
@@ -78,6 +81,20 @@ body {
 }
 .footer-links li a {
     text-decoration: none;
+}
+blink {
+    animation: blink_anim 1s steps(1, end) infinite;
+}
+@keyframes blink_anim {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 /*  Media queries
     ==========================================================================
