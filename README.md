@@ -6,7 +6,7 @@ This way, the user input is going to be only math, allowing for copy-pasting int
 
 ## Usage
 #### Input
-```
+```html
 Fermat says: \(\forall n > 2, n \in \mathbb{Z} \quad \) and \(\quad \forall a,b,c \in \mathbb{Z}^+\)
 <br><br> <!-- HTML and math?! -->
 <center>\(a^n + b^n = c^n\) cannot be solved.</center>
@@ -17,6 +17,6 @@ Fermat says: \(\forall n > 2, n \in \mathbb{Z} \quad \) and \(\quad \forall a,b,
 </p>
 
 ## To-do
-- [ ] Only allow secure HTML tags;
+- [ ] Only allow secure HTML tags from user input;
 - [ ] Fix horizontal overflow from output box;
 - [ ] #footer-credits writing animation;
